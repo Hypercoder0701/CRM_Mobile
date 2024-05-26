@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/product_image_view_update"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_file_upload_black_24dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/product_image_view_update"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="Mahsulot rasmi"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/product_name_edit_text_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Mahsulot nomi"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/product_quantity_edit_text_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Mahsulot adadi (dona, kg yoki litr) "
+            android:inputType="number"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/price_per_unit_edit_text_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Mahsulot narxi (UZS)"
+            android:inputType="number"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
